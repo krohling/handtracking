@@ -101,7 +101,7 @@ def get_bbox_visualize(base_path, dir):
         if not os.path.exists(csv_path + ".csv"):
             cv2.putText(img, "DIR : " + dir + " - " + tail, (20, 50),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.75, (77, 255, 9), 2)
-            cv2.imshow('Verifying annotation ', img)
+            #cv2.imshow('Verifying annotation ', img)
             save_csv(csv_path + ".csv", csvholder)
             print("===== saving csv file for ", tail)
         cv2.waitKey(2)  # close window when a key press is detected
